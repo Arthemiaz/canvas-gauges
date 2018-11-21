@@ -34,8 +34,13 @@ export default {
   watch: {
     value (val) {
       // has bug
-      // this.chart.value = val
+        this.chart.value = val
+    },
+    options(objet){
+         // update options
+         this.chart.update(objet)
     }
+    
   }
 
 }
